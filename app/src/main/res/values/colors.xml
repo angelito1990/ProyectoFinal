@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--basics -->
+    <color name="white">#ffffff</color>
+    <color name="blue">#3F51B5</color>
+
+    <!-- Text -->
+    <color name="primary_backgound">#222222</color>
+    <color name="tutorial_btn_background">#4A4A4A</color>
+
+    <color name="secundary_foreground">#3F51B5</color>
+
+    <color name="hint">#3F51B5</color>
+
+</resources>

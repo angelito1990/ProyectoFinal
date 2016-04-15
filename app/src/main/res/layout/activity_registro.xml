@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:clickable="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/register_layout_general">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/edittext"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="120dp"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:hint="email"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/register_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_email_info"
+                android:textSize="@dimen/text_size_24"
+                android:textColor="@color/blue"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_20" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            >
+
+            <Button
+                android:id="@+id/register_login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/register_login"
+                style="@style/button_black"
+                android:padding="@dimen/padding_5"/>
+
+
+            <Button
+                android:id="@+id/register_btn_steptwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="@string/register_nextstep"
+                style="@style/button_blue"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/guide_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <!--<com.buzinger.mentastudio.app.paginator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="@dimen/padding_6"
+                /> -->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+            <!--Texto del tutorial debe de ir en el LinearLayout(prueba-> luego se pone)
+            android:background="@color/tutorial_text_background"-->
+
+            <Button
+                android:id="@+id/tutorial_btn_join"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/tutorial_join"
+                style="@style/button_black"
+                android:layout_weight="2"
+                />
+
+            <Button
+                android:id="@+id/tutorial_btn_user"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/tutorial_user"
+                style="@style/button_blue"
+                android:layout_weight="3"
+                android:textColor="@color/primary_backgound"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

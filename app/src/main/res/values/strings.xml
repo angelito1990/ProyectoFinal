@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AngelProyecto</string>
+
+    <!--Tutorial -->
+    <string name="tutorial_join">Regístrate</string>
+    <string name="tutorial_user">Ya soy usuario</string>
+
+    <!-- Registro-->
+    <string name="register_email_info">Lo pedimos para asegurarnos de tu identidad y así poder contactar contigo con todas las garantías de seguridad y confidencialidad.</string>
+    <string name="register_nextstep">Siguiente paso</string>
+    <string name="register_final">Aceptar registro</string>
+    <string name="register_login">Loquin</string>
+
+
+    <style name="edittext">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textColorHint">@color/hint</item>
+
+
+        <item name="android:layout_marginRight">@dimen/margin_20</item>
+        <item name="android:layout_marginLeft">@dimen/margin_20</item>
+    </style>
+</resources>
