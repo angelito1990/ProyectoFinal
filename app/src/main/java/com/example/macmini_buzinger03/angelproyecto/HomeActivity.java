@@ -35,7 +35,7 @@ public class HomeActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
 
         android.support.v7.app.ActionBar aBar = getSupportActionBar();
         aBar.setHomeButtonEnabled(true);
@@ -46,7 +46,7 @@ public class HomeActivity extends ActionBarActivity {
         mainLayout=(FrameLayout)findViewById(R.id.mainLayout);
         menuLateral=(ListView)findViewById(R.id.menuLateral);
 
-        String[] opciones={"Opcion 1", "Opcion 2","Opcion 3","Opcion 4", "Opcion 5"};
+        String[] opciones={"Historial", "Contacto","SOS","Ajustes"};
 
         ArrayAdapter adp = new ArrayAdapter<String>(HomeActivity.this, android.R.layout.simple_list_item_1, opciones);
         menuLateral.setAdapter(adp);

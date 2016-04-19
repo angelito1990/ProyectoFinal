@@ -22,28 +22,60 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/register_email"
+                android:id="@+id/txtNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/edittext"
-                android:inputType="textEmailAddress"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="40dp"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:hint="Nombre"
+                android:textSize="30dp"/>
+
+            <EditText
+                android:id="@+id/txtApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/edittext"
+                android:layout_marginTop="40dp"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:hint="Apellidos"
+                android:textSize="30dp"/>
+
+            <EditText
+                android:id="@+id/txtNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/edittext"
+                android:layout_marginTop="40dp"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:hint="DD/MM/AAAA"
+                android:textSize="30dp"/>
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/edittext"
+                android:layout_marginTop="40dp"
                 android:maxLength="40"
                 android:singleLine="true"
                 android:hint="email"
-                android:textSize="30dp"/>
-
-            <TextView
-                android:id="@+id/register_info"
+                android:textSize="30dp" />
+            <EditText
+                android:id="@+id/txtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/register_email_info"
-                android:textSize="@dimen/text_size_24"
-                android:textColor="@color/blue"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:layout_marginRight="@dimen/margin_20"
-                android:layout_marginLeft="@dimen/margin_20" />
+                style="@style/edittext"
+                android:layout_marginTop="40dp"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:hint="Password"
+                android:textSize="30dp"
+                android:password="true"/>
+
+
 
         </LinearLayout>
 
@@ -53,25 +85,14 @@
             android:layout_height="70dp"
             android:orientation="horizontal"
             android:layout_gravity="bottom"
-            android:gravity="bottom"
-            >
+            android:gravity="bottom">
 
             <Button
-                android:id="@+id/register_login"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:text="@string/register_login"
-                style="@style/button_black"
-                android:padding="@dimen/padding_5"/>
-
-
-            <Button
-                android:id="@+id/register_btn_steptwo"
+                android:id="@+id/btnRegistro"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
-                android:text="@string/register_nextstep"
+                android:text="@string/register_final"
                 style="@style/button_blue"/>
         </LinearLayout>
 

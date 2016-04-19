@@ -11,6 +11,7 @@
     <string name="register_final">Aceptar registro</string>
     <string name="register_login">Loquin</string>
 
+    <string name="cuestionario_uno">Siguiente</string>
 
     <style name="edittext">
         <item name="android:textColor">@color/blue</item>
@@ -22,5 +23,7 @@
 
         <item name="android:layout_marginRight">@dimen/margin_20</item>
         <item name="android:layout_marginLeft">@dimen/margin_20</item>
+
+
     </style>
 </resources>
